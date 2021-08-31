@@ -552,6 +552,11 @@ pdt = periodic
 ntn = numtoname
 nts = numtosy
 
+math.randomseed(os.time())
+function random_element()
+	return numtoname[math.random(1, #numtosy)]
+end
+
 -- template
 --[=[
 	[""] = {
